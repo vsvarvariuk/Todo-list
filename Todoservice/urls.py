@@ -1,0 +1,9 @@
+from django.urls import path
+from Todoservice.views import TaskListView, TaskCreateView
+
+urlpatterns = [
+
+    path("",TaskListView.as_view(),name="task-list"),
+    path("",TaskCreateView.as_view(),name="task-create")
+]
+app_name = "Todo"
