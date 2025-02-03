@@ -6,10 +6,11 @@ from Todoservice.views import (TaskListView,
                                TagListView,
                                TagUpdateView,
                                TagDeleteView,
-                               TagCreateView)
+                               TagCreateView, toggle_task_status)
 
 urlpatterns = [
 
+    path("change-status/<int:task_id>/",toggle_task_status,name="toggle-task-status"),
     path("",TaskListView.as_view(),name="task-list"),
     path("create-task/",TaskCreateView.as_view(),name="task-create"),
     path("update-task/<int:pk>/",TaskUpdateView.as_view(),name="task-update"),

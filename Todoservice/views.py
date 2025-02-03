@@ -1,8 +1,14 @@
-from django.shortcuts import render
+from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.views import generic
 from .models import Task, Tag
 
+
+def toggle_task_status(request, task_id):
+    task = Task.objects.get(id=task_id)
+    task.is_done = not task.is_done
+    task.save()
+    return redirect(request.META.get('HTTP_REFERER'))
 
 class TaskListView(generic.ListView):
     model = Task

@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+a.btn {
+  margin-right: 10px;
+}
+
+.container {
+  max-width: 1200px;
+}
