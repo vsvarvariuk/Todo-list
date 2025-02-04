@@ -1,12 +1,12 @@
 from django.urls import path
-from Todoservice.views import (TaskListView,
-                               TaskCreateView,
-                               TaskUpdateView,
-                               TaskDeleteView,
-                               TagListView,
-                               TagUpdateView,
-                               TagDeleteView,
-                               TagCreateView, toggle_task_status)
+from todo_service.views import (TaskListView,
+                                TaskCreateView,
+                                TaskUpdateView,
+                                TaskDeleteView,
+                                TagListView,
+                                TagUpdateView,
+                                TagDeleteView,
+                                TagCreateView, toggle_task_status)
 
 urlpatterns = [
 

@@ -1,7 +1,7 @@
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.views import generic
-from .models import Task, Tag
+from todo_service.models import Task, Tag
 
 
 def toggle_task_status(request, task_id):
